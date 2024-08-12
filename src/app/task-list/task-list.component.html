@@ -1,0 +1,14 @@
+<!-- src/app/task-list/task-list.component.html -->
+<div class="container mt-4">
+  <div *ngFor="let task of tasks" class="card mb-2">
+    <div class="card-body">
+      <h5 class="card-title">
+        <input type="checkbox" [(ngModel)]="task.completed" />
+        {{ task.title }}
+
+        <button (click)="removeTask(task)" class="btn btn-danger btn-sm float-right">Remove</button>
+      </h5>
+      <p class="card-text">{{ task.description }}</p>
+    </div>
+  </div>
+</div>

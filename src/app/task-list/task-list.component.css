@@ -1,0 +1,52 @@
+.all-list{
+    text-align: center;
+}
+
+.list{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+}
+
+.ea{
+    background-color: aliceblue;
+    width: 300px;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.empty{
+    font-weight: bold;
+    color: rgb(238, 232, 232);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.add{
+    align-self: flex-end;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.add:active{
+    background-color: rgb(13, 139, 13);
+}
+
+#toggle:checked ~ .all-list{
+    display: none;
+}
+
+#toggle{
+    display: none;
+}

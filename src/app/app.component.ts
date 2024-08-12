@@ -1,10 +1,11 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
+import { Task } from './task';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'task-manager';
+  tasks: Task[] = [];
 }
